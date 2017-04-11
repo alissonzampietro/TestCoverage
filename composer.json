@@ -1,0 +1,13 @@
+{
+    "name": "alisson/testing_phpunit_without_composer",
+    "authors": [
+        {
+            "name": "Alisson Zampietro",
+            "email": "alisson.zampietro@gmail.com"
+        }
+    ],
+    "require": {},
+	"require-dev": {
+		"phpunit/phpunit": "^5.7"
+	}
+}
