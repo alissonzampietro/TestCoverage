@@ -1,7 +1,5 @@
 <?php
 
-require __DIR__."/../app/User.php";
-
 use PHPUnit\Framework\TestCase;
 
 class UserTest extends TestCase
@@ -35,11 +33,21 @@ class UserTest extends TestCase
         $this->assertEquals("Alisson", $this->user->getName());
     }
     
+    /**
+     * @test
+     */
+    public function mustVerifyIfIsSettingUserCity()
+    {
+        $this->user->setCity("São Paulo");
+        $this->stringContains($this->user->getCity());
+        $this->assertEquals("São Paulo", $this->user->getCity());
+    }
+    
     /**er
      * @test
      */
-    public function mustVerifyIfThereIsAUser()
+    public function mustVerifyIfAllUsersHaveBeenSetted()
     {
-    	var_dump(isType($this->user));
+    	$this->assertEquals($this->user, $this->user->getUser(new Json()));
     }
 }

@@ -8,7 +8,9 @@ use App\Helpers\Schema\Json; */
 
 $user = new User();
 
-$user->setName("Alisson")->setAge(22);
+$user->isUser();
+
+$user->setName("Alisson")->setAge(22)->setCity("São Paulo");
 
 $json = new Json();
 

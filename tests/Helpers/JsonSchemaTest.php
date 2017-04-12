@@ -1,6 +1,4 @@
 <?php
-require __DIR__ . "/../../app/Helpers/Schema/Json.php";
-
 use PHPUnit\Framework\TestCase;
 
 class JsonSchemaTest extends TestCase
@@ -36,5 +34,13 @@ class JsonSchemaTest extends TestCase
         "name" => "Alisson",
         "age" => 22
     ), $this->json->decode('{"name":"Alisson","age":22}'));
+    }
+    
+    /**
+     * @test
+     */
+    public function mustVerifyIfBothIsWorking()
+    {
+        
     }
 }
