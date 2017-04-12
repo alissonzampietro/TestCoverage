@@ -34,4 +34,12 @@ class UserTest extends TestCase
         $this->stringContains($this->user->getName());
         $this->assertEquals("Alisson", $this->user->getName());
     }
+    
+    /**er
+     * @test
+     */
+    public function mustVerifyIfThereIsAUser()
+    {
+    	var_dump(isType($this->user));
+    }
 }
